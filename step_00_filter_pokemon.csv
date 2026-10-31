@@ -1,0 +1,4 @@
+#! /bin/bash
+head -n "$152" all_pokemon.csv > pokemon_filtered.csv
+sed -d '1d' pokemon_filtered.csv
+sed -d '/Mega/d' pokemon_filted.csv
